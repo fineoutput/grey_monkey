@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+img{
+    width: 100%;
+}
+
+.header-lsts ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.top-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-lsts ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.header-lsts ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+}
+.header-sec {
+    padding: 12px 0px 2px 0px;
+    background: #674631;
+}
+
+
+/* Custom styles for the navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Adjust the color as needed */
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* Ensure the active link has a different style */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ff0000; /* Example: Change the color of the active link */
+}
+
+/* Custom styles for the navbar brand */
+.navbar-brand img {
+    width: 110px; /* Adjust the width as needed */
+}
+
+/* Ensure the navbar is responsive and looks good on smaller screens */
+@media (max-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+}
+
+.carousel {
+    height: 100vh; /* Adjust this value to your desired height */
+}
+
+/* CSS to reduce the height of each carousel item */
+.carousel-item {
+    height: 100vh; /* Adjust this value to your desired height */
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.section-padding{
+    padding: 6rem;
+}
+.special-sec img{
+    height: 100%;
+}
+
+
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    transition: bottom 0.3s ease-in-out;
+    -webkit-transition: bottom 0.3s ease-in-out;
+    -moz-transition: bottom 0.3s ease-in-out;
+    -ms-transition: bottom 0.3s ease-in-out;
+    -o-transition: bottom 0.3s ease-in-out;
+}
+  
+  .image-container:hover .image-overlay {
+    bottom: 0;
+  }
+  
+
+  .thrd-sect {
+    background-color: #ededed;
+    padding: 50px;
+}
+.thrd-txt h4 {
+    color: #9b8787;
+}
+
+.quotes-ig{
+    background-image: url('{{ asset("frontend/images/toilets.jpeg") }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
