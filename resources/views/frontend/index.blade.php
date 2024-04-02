@@ -294,7 +294,10 @@
                     <p>&copy; 2024 Your Company. All rights reserved.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="path/to/your/image.png" alt="Logo" class="img-fluid">
+                  <div class="logo-sect">
+                  <h4>Developed by</h4>
+                  <img src="{{url('frontend/images/logo_(1).png')}}" width="110px" alt="Logo">
+                  </div>
                 </div>
             </div>
         </div>

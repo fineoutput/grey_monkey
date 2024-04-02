@@ -479,3 +479,11 @@ holdsec */
   margin-left: 20px;
   vertical-align: middle;
 }
+.logo-sect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-sect h4 {
+  margin-bottom: 0;
+}
