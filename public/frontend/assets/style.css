@@ -316,7 +316,7 @@ h2.text-center span {
           .form-input {
             padding: 20px 25px 15px;
             width: 100%;
-            border: 1px solid $color-black;
+            border: 1px solid color-black;
             border-radius: 5px;
             background: transparent;
             outline: none;
@@ -327,12 +327,12 @@ h2.text-center span {
   
             &:valid,
             &:focus {
-              border: 1px solid $color-gray;
+              border: 1px solid color-gray;
             }
   
             &:valid ~ .form-label,
             &:focus ~ .form-label {
-              color: $color-gray;
+              color: color-gray;
               top: 30%;
               transform: translateY(-70%);
               font-size: 13px;
@@ -367,7 +367,7 @@ h2.text-center span {
           .form-textarea {
             padding: 20px 25px 15px;
             width: 100%;
-            border: 1px solid $color-black;
+            border: 1px solid color-black;
             border-radius: 5px;
             background: transparent;
             outline: none;
@@ -383,12 +383,12 @@ h2.text-center span {
   
             &:valid,
             &:focus {
-              border: 1px solid $color-gray;
+              border: 1px solid color-gray;
             }
   
             &:valid ~ .form-textarea-label,
             &:focus ~ .form-textarea-label {
-              color: $color-gray;
+              color: color-gray;
               top: 18%;
               transform: translateY(-82%);
               font-size: 13px;
