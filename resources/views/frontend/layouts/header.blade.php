@@ -21,22 +21,22 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Home</a>
+                                <a class="nav-link text-black fw-bold" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#special">Events</a>
+                                <a class="nav-link text-black fw-bold" href="#special">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#construct">Constructions</a>
+                                <a class="nav-link text-black fw-bold" href="#construct">Constructions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#cntct">Contact Id</a>
+                                <a class="nav-link text-black fw-bold" href="#cntct">Contact Id</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('quotes')}}">Quotes</a>
+                                <a class="nav-link text-black fw-bold" href="{{route('quotes')}}">Quotes</a>
                             </li>
                         </ul>
                     </div>
@@ -44,3 +44,5 @@
             </nav>
         </div>
     </div>
+</body>
+</html>

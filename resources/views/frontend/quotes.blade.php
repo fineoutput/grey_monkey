@@ -1,48 +1,73 @@
 @extends('frontend.layouts.app')
 @section('main')
-   <div class="section quotes-ig">
-    <div class="container">
-        <div class="row">
-            <div></div>
-        </div>
-    </div>
-   </div>
 
-    <div class="section form-sect section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="mb-4">Call us today on 0800 292 2313 or leave your message for a FREE quote!</h3>
-  <form action="submit.php" method="post">
-    <div class="mb-3">
-      <label for="full_name" class="form-label">Full Name</label>
-      <input type="text" class="form-control" id="full_name" name="full_name" required>
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="mb-3">
-      <label for="phone" class="form-label">Phone</label>
-      <input type="tel" class="form-control" id="phone" name="phone" required>
-    </div>
-    <div class="mb-3">
-      <label for="postcode" class="form-label">Postcode</label>
-      <input type="text" class="form-control" id="postcode" name="postcode" required>
-    </div>
-    <div class="mb-3">
-      <label for="hire_period" class="form-label">Hire Period</label>
-      <input type="text" class="form-control" id="hire_period" name="hire_period">
-    </div>
-    <div class="mb-3">
-      <label for="how_can_we_assist" class="form-label">How Can We Assist?</label>
-      <textarea class="form-control" id="how_can_we_assist" name="how_can_we_assist" rows="3" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-                      
-                </div>
-            </div>
-        </div>
+   <div class="form-main " id="cntct">
+      <div class="main-wrapper">
+        <h2 class="form-head">Call us today on 0800 292 2313 or leave your message for a FREE quote!</h2>
+        <form class="form-wrapper">
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="text"
+              name="full_name"
+              required="required"
+            />
+            <label class="form-label" for="full_name">Full Name</label>
+          </div>
+
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              required="required"
+            />
+            <label class="form-label" for="email">Email</label>
+          </div>
+
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="number"
+              name="phone_number"
+              required="required"
+            />
+            <label class="form-label" for="phone_number">Phone number</label>
+          </div>
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="number"
+              name="post_code"
+              required="required"
+            />
+            <label class="form-label" for="post_code">POSTCODE </label>
+          </div>
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="number"
+              name="hire_period"
+              required="required"
+            />
+            <label class="form-label" for="hire_period">HIRE PERIOD</label>
+          </div>
+          <div class="form-card">
+            <textarea
+              class="form-textarea"
+              maxlength="420"
+              rows="3"
+              name="phone_number"
+              required="required"
+            ></textarea>
+            <label class="form-textarea-label" for="phone_number"
+              >HOW CAN WE ASSIST?</label
+            >
+          </div>
+          <div class="btn-wrap">
+            <button> Submit </button>
+          </div>
+        </form>
+      </div>
     </div>
 @endsection

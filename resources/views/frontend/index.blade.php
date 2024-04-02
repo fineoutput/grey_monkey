@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('main')
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <!-- <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -8,7 +8,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{{url('frontend/images/bathroom.jpeg')}}" class="d-block w-100" alt="...">
+            <img src="{{url('frontend/images/Construction-Site-Toilet-Banner.jpg')}}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="{{url('frontend/images/WhatsApp Image 2024-03-26 at 7.57.24 PM (1).jpeg')}}" class="d-block w-100" alt="...">
@@ -32,9 +32,26 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <!-- <div class="section-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <header class="hero" id="carouselExampleIndicators">
+        <div class="hero-content">
+            <h1 class="hero-title">Grey <span>Monkey</span> </h1>
+            <p class="hero-subtitle">Portable Toilets</p>
+        </div>
+    </header>
 
-    <div class="section special-sec section-padding" id="special">
+
+
+    <!-- <div class="section special-sec section-padding" id="special">
         <div class="container">
             <div class="rwo">
                 <div class="col-lg-12">
@@ -67,7 +84,35 @@
                 
             </div>
         </div>
+    </div> -->
+  <div class="section section-padding">
+  <div class="container">
+    <div class="row hell">
+          <div class="col-lg-12 txt-sect">
+            <h2 class="text-center">What we <span>offer</span></h2>
+            <p class="text-center">Grey Monkey Specialises in low-cost Portable Loo hire across the midlands.     Our portable toilet rental is second to none – With unbeatable Portable Loo hire prices and delivery costs, you wont need to look anywhere else once you have worked with us. </p>
+          </div>
+        </div>
     </div>
+      <div class="container sect" id="special">
+      <div class="panel active" style="background-image: url('frontend/images/construct.jpeg')">
+        <h3>CONSTRUCTION WELFARE NEEDS</h3>
+      </div>
+      <div class="panel" style="background-image: url('frontend/images/Event.jpeg')">
+        <h3>EVENT HIRE</h3>
+      </div>
+      <div class="panel" style="background-image: url('frontend/images/wedding-trailer.jpeg')">
+        <h3>TRAILER HIRE</h3>
+      </div>
+      <div class="panel" style="background-image: url('frontend/images/Event.jpeg')">
+        <h3>CROSSHIRE</h3>
+      </div>
+      
+
+    </div>
+    
+    </div>
+    
     
     <div class="section thrd-sect section-padding" id="construct">
         <div class="container">
@@ -128,9 +173,12 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="section form-sect section-padding" id="cntct">
+
+        
+   
+
+    <!-- <div class="section form-sect section-padding" id="cntct">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -166,5 +214,107 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="form-main " id="cntct">
+      <div class="main-wrapper">
+        <h2 class="form-head">Call us today on 0800 292 2313 or leave your message for a FREE quote!</h2>
+        <form class="form-wrapper">
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="text"
+              name="full_name"
+              required="required"
+            />
+            <label class="form-label" for="full_name">Full Name</label>
+          </div>
+
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              required="required"
+            />
+            <label class="form-label" for="email">Email</label>
+          </div>
+
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="number"
+              name="phone_number"
+              required="required"
+            />
+            <label class="form-label" for="phone_number">Phone number</label>
+          </div>
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="number"
+              name="post_code"
+              required="required"
+            />
+            <label class="form-label" for="post_code">POSTCODE </label>
+          </div>
+          <div class="form-card">
+            <input
+              class="form-input"
+              type="number"
+              name="hire_period"
+              required="required"
+            />
+            <label class="form-label" for="hire_period">HIRE PERIOD</label>
+          </div>
+          <div class="form-card">
+            <textarea
+              class="form-textarea"
+              maxlength="420"
+              rows="3"
+              name="phone_number"
+              required="required"
+            ></textarea>
+            <label class="form-textarea-label" for="phone_number"
+              >HOW CAN WE ASSIST?</label
+            >
+          </div>
+          <div class="btn-wrap">
+            <button> Submit </button>
+          </div>
+        </form>
+      </div>
     </div>
+
+
+    <footer class="footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Your Company. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="path/to/your/image.png" alt="Logo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const panels = document.querySelectorAll('.panel')
+
+panels.forEach(panel => {
+    panel.addEventListener('mouseover', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+})
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+    })
+}
+    </script>
+
+
 @endsection
