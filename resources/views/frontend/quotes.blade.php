@@ -27,7 +27,7 @@
         <div class="col-md-6">
             <div class="form-section">
                 <div class="image-container">
-                <img src="{{url('frontend/images/contact.jpg')}}">
+                <img src="{{url('frontend/images/call.jpg')}}">
                 </div>
             </div>
         </div>
