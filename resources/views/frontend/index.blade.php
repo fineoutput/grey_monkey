@@ -354,12 +354,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2024 Your Company. All rights reserved.</p>
+                    <p>Copyright © 2024 Grey Monkey All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6">
                   <div class="logo-sect">
-                  <h4>Developed by</h4>
-                  <img src="{{url('frontend/images/logo_(1).png')}}" width="110px" alt="Logo">
+                  <a style="text-decoration: none;" href="https://www.fineoutput.com/">
+                    <p>Developed by Fineoutput Technology</p>
+                  </a>
                   </div>
                 </div>
             </div>

@@ -33,4 +33,20 @@
         </div>
     </div>
 </div>
+<footer class="footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright © 2024 Grey Monkey All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                  <div class="logo-sect">
+                  <a style="text-decoration: none;" href="https://www.fineoutput.com/">
+                    <p>Developed by Fineoutput Technology</p>
+                  </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 @endsection
