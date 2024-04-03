@@ -933,4 +933,7 @@ h3 {
 .form-section .form-container {
   padding: 10px 30px;
 }
+.form-section form input, .form-section form textarea {
+  margin-bottom: 16px;
+}
 }
