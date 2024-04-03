@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
 }
+a.nav-link.text-black.fw-bold {
+  font-family: "PT Sans", sans-serif;
+}
 img{
     width: 100%;
 }
@@ -13,6 +16,15 @@ img{
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   background-color: grey !important;
 }
+.header-sec {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-sec.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .header-lsts ul {
     display: flex;
     justify-content: space-between;
@@ -59,7 +71,7 @@ img{
 
 /* Custom styles for the navbar brand */
 .navbar-brand img {
-    width: 110px; /* Adjust the width as needed */
+    width: 150px; /* Adjust the width as needed */
 }
 
 /* Ensure the navbar is responsive and looks good on smaller screens */
@@ -126,7 +138,7 @@ img{
 }
 
 .quotes-ig{
-    background-image: url('{{ asset("frontend/images/toilets.jpeg") }}');
+    background-image: url('asset("frontend/images/contact.jpg")');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -486,4 +498,274 @@ holdsec */
 }
 .logo-sect h4 {
   margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section-heading {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.section-heading h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.brand-name {
+  color: #ffac30; /* Highlight color */
+  font-weight: bold;
+}
+.section-heading p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.image-container:hover {
+  transform: scale(1.05);
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 18px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.image-text-secondary {
+  position: absolute;
+  bottom: -40px; /* Adjust this value based on your design */
+  left: 20px;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+.image-container:hover .image-text {
+  opacity: 0.7;
+  bottom: 40px; /* Adjust this value based on your design */
+}
+.image-container:hover .image-text-secondary {
+  opacity: 1;
+  bottom: 0; /* Adjust this value based on your design */
+}
+
+   /*! CSS Used from: https://www.tashyatritech.com/frontend/assets/css/bootstrap.min.css */
+   *,::after,::before{box-sizing:border-box;}
+   h2,h3{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2;color:var(--bs-heading-color);}
+   h2{font-size:calc(1.325rem + .9vw);}
+   @media (min-width:1200px){
+   h2{font-size:2rem;}
+   }
+   h3{font-size:calc(1.3rem + .6vw);}
+   @media (min-width:1200px){
+   h3{font-size:1.75rem;}
+   }
+   p{margin-top:0;margin-bottom:1rem;}
+   .container{--bs-gutter-x:1.5rem;--bs-gutter-y:0;width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-right:auto;margin-left:auto;}
+   @media (min-width:576px){
+   .container{max-width:540px;}
+   }
+   @media (min-width:768px){
+   .container{max-width:720px;}
+   }
+   @media (min-width:992px){
+   .container{max-width:960px;}
+   }
+   @media (min-width:1200px){
+   .container{max-width:1140px;}
+   }
+   @media (min-width:1400px){
+   .container{max-width:1320px;}
+   }
+   .row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x));}
+   .row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-top:var(--bs-gutter-y);}
+   @media (min-width:576px){
+   .col-sm-6{flex:0 0 auto;width:50%;}
+   }
+   @media (min-width:992px){
+   .col-lg-4{flex:0 0 auto;width:33.33333333%;}
+   }
+   .text-center{text-align:center!important;}
+   /*! CSS Used from: https://www.tashyatritech.com/frontend/assets/fonts/flaticon.css */
+   [class^=flaticon-]:before,[class^=flaticon-]:after{font-family:Flaticon;font-style:normal;}
+   .flaticon-effective:before{content:"\f102";}
+   .flaticon-project:before{content:"\f109";}
+   .flaticon-chip:before{content:"\f10a";}
+   /*! CSS Used from: https://www.tashyatritech.com/frontend/assets/css/style.css */
+   p{color:#444;font-weight:400;}
+   .pt-100{padding-top:100px;}
+   h2,h3{font-weight:600;color:#252525;}
+   h3{font-size:22px;}
+   .pb-70{padding-bottom:70px;}
+   .pt-45{padding-top:45px;}
+   .section-title span{margin-bottom:8px;font-weight:600;display:block;}
+   .section-title h2{font-size:35px;font-weight:600;margin-top:0;line-height:1.2;color:#252525;margin-bottom:0;}
+   .sp-color2{color:#0071dc;}
+   .work-process-card p{margin-bottom:0;}
+   .work-process-card{margin-bottom:30px;position:relative;z-index:1;}
+   .work-process-area .section-title h2{max-width:550px;margin-left:auto;margin-right:auto;}
+   .work-process-card{background-color:#fff;box-shadow:0 0 15px rgba(0, 0, 0, .1);}
+   .work-process-card::before{opacity:.1;background-color:#0071dc;content:"";z-index:-1;transition:.7s;}
+   .work-process-card{padding:30px 20px;}
+   .work-process-card::before{position:absolute;top:0;right:0;width:70px;height:55px;border-radius:0 0 0 270px;}
+   .work-process-card i{font-size:60px;color:#0071dc;line-height:1.2;}
+   .work-process-card h3{margin-top:15px;margin-bottom:10px;}
+   .work-process-card .number{font-size:24px;color:#0071dc;font-weight:600;position:absolute;top:5px;right:15px;}
+   .section-title h2{margin-top:13px!important;}
+   .work-process-card p{text-align:justify!important;}
+   .work-process-card{min-height:306px;max-height:306px;}
+   /*! CSS Used from: https://www.tashyatritech.com/frontend/assets/css/responsive.css */
+   @media only screen and (max-width:767px){
+   .pt-100{padding-top:50px;}
+   .pb-70{padding-bottom:20px;}
+   .pt-45{padding-top:30px;}
+   .section-title span{font-size:14px;}
+   .section-title h2{font-size:26px;margin-top:0;}
+   h3{font-size:18px;}
+   .work-process-card{text-align:center;}
+   }
+   @media only screen and (min-width:768px) and (max-width:991px){
+   .pt-100{padding-top:50px;}
+   .pb-70{padding-bottom:20px;}
+   .pt-45{padding-top:30px;}
+   .section-title span{font-size:14px;list-style:0;padding:0;margin:0;}
+   .section-title h2{font-size:26px;margin-top:0;}
+   h3{font-size:21px;}
+   .work-process-card{padding:30px 32px;}
+   }
+   @media only screen and (min-width:992px) and (max-width:1199px){
+   .work-process-card{padding:30px 20px;}
+   .work-process-card h3{font-size:20px;}
+   }
+   @media only screen and (min-width:1200px){
+   .container{max-width:1170px;}
+   }
+
+
+
+
+
+
+
+   .form-section {
+    display: flex;
+    align-items: stretch; /* Change to stretch */
+    justify-content: center;
+    height: 700px;
+}
+.form-section .form-container {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Add this line */
+}
+.form-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.form-section form input,
+.form-section form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+.form-section form input:focus,
+.form-section form textarea:focus {
+    border-color: #007bff;
+}
+.form-section form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.form-section form button:hover {
+    background-color: #0056b3;
+}
+.form-section .image-container {
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 10px;
+}
+.form-section .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cntct-sect{
+  background-image: url('../images/contact.jpg');
+  /* background-image: url('("frontend/images/contact.jpg")'); */
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+/* .name-sec .carousel {
+  height: 500px;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+.name-sec {
+  height: 500px;
+} */
+
+.set-sec{
+  height: 500px !important;
+  overflow: hidden !important;
 }
