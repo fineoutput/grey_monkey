@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div> 
     <!-- <div class="section-hero">
         <div class="container">
             <div class="row">
@@ -59,24 +59,24 @@
             <a href="{{route('quotes')}}"><div class="image-container">
                 <img src="{{url('frontend/images/construct.jpeg')}}">
                 <div class="image-overlay"></div>
-                <div class="image-text">Initial Text 1</div>
-                <div class="image-text-secondary">Secondary Text 1</div>
+                <div class="image-text">Hire & Service</div>
+                <div class="image-text-secondary"></div>
             </div></a>
         </div>
         <div class="col-md-6 col-lg-3">
         <a href="{{route('quotes')}}"><div class="image-container">
             <img src="{{url('frontend/images/toilet_row2.jpeg')}}">
                 <div class="image-overlay"></div>
-                <div class="image-text">Initial Text 2</div>
-                <div class="image-text-secondary">Secondary Text 2</div>
+                <div class="image-text">Events </div>
+                <div class="image-text-secondary"></div>
             </div></a>
         </div>
         <div class="col-md-6 col-lg-3">
         <a href="{{route('quotes')}}"><div class="image-container">
                 <img src="{{url('frontend/images/Event.jpeg')}}">
                 <div class="image-overlay"></div>
-                <div class="image-text">Initial Text 3</div>
-                <div class="image-text-secondary">Secondary Text 3</div>
+                <div class="image-text">Event Trailer Hire </div>
+                <div class="image-text-secondary"></div>
             </div></a>
         </div>
         <div class="col-md-6 col-lg-3">
@@ -84,8 +84,8 @@
             <img src="{{url('frontend/images/toilet_row3.jpeg')}}">
                 <img src="images/img4.jpg" alt="Image 4">
                 <div class="image-overlay"></div>
-                <div class="image-text">Initial Text 4</div>
-                <div class="image-text-secondary">Secondary Text 4</div>
+                <div class="image-text">Cross Hire </div>
+                <div class="image-text-secondary"></div>
             </div></a>
         </div>
     </div>
@@ -128,7 +128,6 @@
     <section class="work-process-area pt-100 pb-70" id="Constructions">
     <div class="container">
         <div class="section-title text-center">
-            <span class="sp-color2">Lorem ipsum dolor sit amet..</span>
             <h2 style="max-width: 100%;">Reliable, Clean, Convenient: Your Portable Toilet Solution</h2>
         </div>
         <div class="row pt-45">
@@ -136,7 +135,7 @@
                 <div class="work-process-card">
                 <i class="fa-solid fa-person-digging"></i>
                     <h3>CONSTRUCTION WELFARE NEEDS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa cum qui natus quaerat, consectetur sequi temporibus ex accusamus tempore provident iste. Nam cum eaque fugiat quos, molestias ex blanditiis. Minima!
+                    <p>Meeting construction toilet welfare needs is not only a legal requirement but also essential for creating a positive working environment and promoting the well-being of construction workers. It helps ensure that workers have access to clean and safe facilities, which in turn contributes to their productivity, morale, and overall job satisfaction.
                     </p>
                 </div>
             </div>
@@ -144,7 +143,7 @@
                 <div class="work-process-card">
                 <i class="fa-solid fa-calendar-days"></i>
                     <h3>EVENT HIRE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quo quisquam dolorem, architecto voluptate veniam perferendis quasi assumenda a corrupti optio amet libero nemo! Cupiditate distinctio numquam fugit repellat fugiat similique?
+                    <p>Toilet event hire refers to the rental of portable toilets for various events or gatherings, such as outdoor parties, festivals, weddings, concerts and sporting events. It involves providing temporary toilet facilities to meet the sanitation needs of attendees or participants.
                     </p>
                 </div>
             </div>
@@ -154,7 +153,7 @@
                 <div class="work-process-card">
                 <i class="fa-solid fa-trailer"></i>
                     <h3>TRAILER HIRE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quo quisquam dolorem, architecto voluptate veniam perferendis quasi assumenda a corrupti optio amet libero nemo! Cupiditate distinctio numquam fugit repellat fugiat similique?
+                    <p>Wedding trailer toilet facilities hire refers to the rental of luxury portable toilets or restroom trailers specifically designed for weddings. These facilities offer a more upscale and comfortable experience for guests compared to standard portable toilets. They are often used to meet the sanitation needs of wedding venues that may not have permanent restroom facilities or require additional facilities to accommodate a larger guest count.
                     </p>
                 </div>
             </div>
@@ -162,7 +161,7 @@
                 <div class="work-process-card">
                 <i class="fa-solid fa-crosshairs"></i>
                     <h3>CROSSHIRE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quo quisquam dolorem, architecto voluptate veniam perferendis quasi assumenda a corrupti optio amet libero nemo! Cupiditate distinctio numquam fugit repellat fugiat similique?
+                    <p>Crosshire toilet hire provides a convenient solution for companies that require portable toilets but do not have their own inventory. It allows them to rent toilets from an established toilet hire company through a crosshiring arrangement. However, it's important for the crosshiring company to work with reputable and reliable toilet hire providers to ensure the quality and availability of the units for their clients.
                     </p>
                 </div>
             </div>

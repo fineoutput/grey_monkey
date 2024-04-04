@@ -19,6 +19,9 @@ img {
 .header-sec {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+/* .header-sec .hhhedd{
+    color: grey;
+} */
 
 .header-sec.scrolled {
     background-color: white;
@@ -549,6 +552,7 @@ holdsec */
 .image-container:hover .image-text {
     opacity: 0.7;
     bottom: 40px; /* Adjust this value based on your design */
+    font-size: 30px;
 }
 .image-container:hover .image-text-secondary {
     opacity: 1;

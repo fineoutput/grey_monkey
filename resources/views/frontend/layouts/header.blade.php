@@ -15,6 +15,7 @@
 <body>
     <div class="section header-sec sticky-top" id="main-header">
         <div class="container">
+        <p class="text-center">Contact us: <a class="hhhedd" style= "text-decoration: none;" href="tel:0800 292 2313 ">0800 292 2313 </a></p>
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
@@ -35,11 +36,12 @@
                                 <a class="nav-link text-black fw-bold" href="{{route('/')}}#construct">Constructions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black fw-bold" href="{{route('/')}}#cntct">Contact Id</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link text-black fw-bold" href="{{route('quotes')}}">Quotes</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black fw-bold" href="{{route('/')}}#cntct">Contact Id</a>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>

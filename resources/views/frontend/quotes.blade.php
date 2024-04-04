@@ -18,6 +18,7 @@
                         <input type="tel" name="phone" placeholder="Phone" required>
                         <input type="text" name="postcode" placeholder="Postcode" required>
                         <input type="text" name="hireperiod" placeholder="Hire Period" required>
+                        <input type="number" name="toilet" placeholder="How Many Toilets Required ">
                         <textarea name="message" placeholder="How can we assist?" rows="5" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
