@@ -26,16 +26,16 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link text-black fw-bold" href="/">Home</a>
+                                <a class="nav-link text-black fw-bold" href="{{route('/')}}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black fw-bold" href="#special">Events</a>
+                                <a class="nav-link text-black fw-bold" href="{{route('/')}}#special">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black fw-bold" href="#construct">Constructions</a>
+                                <a class="nav-link text-black fw-bold" href="{{route('/')}}#construct">Constructions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black fw-bold" href="#cntct">Contact Id</a>
+                                <a class="nav-link text-black fw-bold" href="{{route('/')}}#cntct">Contact Id</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-black fw-bold" href="{{route('quotes')}}">Quotes</a>
