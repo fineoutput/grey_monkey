@@ -54,6 +54,13 @@ img {
     background: #fff;
 }
 
+<<<<<<< HEAD
+=======
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(2 2 2 / 55%) !important;
+}
+/* Custom styles for the navbar */
+>>>>>>> ab58fe8b4ccf0930ce0f4e2182076e35afe3ab1f
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(2 2 2 / 55%) !important;
 }
@@ -72,7 +79,11 @@ img {
 
 / Custom styles for the navbar brand /
 .navbar-brand img {
+<<<<<<< HEAD
     width: 150px; / Adjust the width as needed /
+=======
+    width: 150px; /* Adjust the width as needed */
+>>>>>>> ab58fe8b4ccf0930ce0f4e2182076e35afe3ab1f
 }
 
 / Ensure the navbar is responsive and looks good on smaller screens /
@@ -135,8 +146,13 @@ img {
     color: #9b8787;
 }
 
+<<<<<<< HEAD
 .quotes-ig {
     background-image: url('asset("frontend/images/contact.jpg")');
+=======
+.quotes-ig{
+    background-image: url('{{ asset("frontend/images/toilets.jpeg") }}');
+>>>>>>> ab58fe8b4ccf0930ce0f4e2182076e35afe3ab1f
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,6 +160,7 @@ img {
     height: 100vh;
 }
 
+<<<<<<< HEAD
 .hero {
     position: relative;
     background: url("/frontend/images/backgrnd.jpeg") center/cover no-repeat;
@@ -907,6 +924,8 @@ h3 {
     height: 100vh;
 }
 
+=======
+>>>>>>> ab58fe8b4ccf0930ce0f4e2182076e35afe3ab1f
 /* .name-sec .carousel {
   height: 500px;
 }
