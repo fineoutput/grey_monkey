@@ -54,52 +54,41 @@ img {
     background: #fff;
 }
 
-<<<<<<< HEAD
-=======
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(2 2 2 / 55%) !important;
 }
 /* Custom styles for the navbar */
->>>>>>> ab58fe8b4ccf0930ce0f4e2182076e35afe3ab1f
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(2 2 2 / 55%) !important;
-}
-/ Custom styles for the navbar /
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff; / Adjust the color as needed /
+    color: #fff; /* Adjust the color as needed */
     font-size: 20px;
     font-weight: 500;
     font-family: "Bebas Neue", sans-serif;
 }
 
-/ Ensure the active link has a different style /
+/* Ensure the active link has a different style */
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #ff0000; / Example: Change the color of the active link /
+    color: #ff0000; /* Example: Change the color of the active link */
 }
 
-/ Custom styles for the navbar brand /
+/* Custom styles for the navbar brand */
 .navbar-brand img {
-<<<<<<< HEAD
-    width: 150px; / Adjust the width as needed /
-=======
     width: 150px; /* Adjust the width as needed */
->>>>>>> ab58fe8b4ccf0930ce0f4e2182076e35afe3ab1f
 }
 
-/ Ensure the navbar is responsive and looks good on smaller screens /
+/* Ensure the navbar is responsive and looks good on smaller screens */
 @media (max-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
-        font-size: 16px; / Adjust the font size for smaller screens /
+        font-size: 16px; /* Adjust the font size for smaller screens */
     }
 }
 
 .carousel {
-    height: 100vh; / Adjust this value to your desired height /
+    height: 100vh; /* Adjust this value to your desired height */
 }
 
-/ CSS to reduce the height of each carousel item /
+/* CSS to reduce the height of each carousel item */
 .carousel-item {
-    height: 100vh; / Adjust this value to your desired height /
+    height: 100vh; /* Adjust this value to your desired height */
 }
 .carousel-item img {
     object-fit: cover;
@@ -146,13 +135,8 @@ img {
     color: #9b8787;
 }
 
-<<<<<<< HEAD
 .quotes-ig {
     background-image: url('asset("frontend/images/contact.jpg")');
-=======
-.quotes-ig{
-    background-image: url('{{ asset("frontend/images/toilets.jpeg") }}');
->>>>>>> ab58fe8b4ccf0930ce0f4e2182076e35afe3ab1f
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,7 +144,6 @@ img {
     height: 100vh;
 }
 
-<<<<<<< HEAD
 .hero {
     position: relative;
     background: url("/frontend/images/backgrnd.jpeg") center/cover no-repeat;
@@ -177,14 +160,14 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); / Black color with 60% opacity /
-    z-index: 1; / Ensure the overlay is behind the content /
+    background-color: rgba(0, 0, 0, 0.6); /* Black color with 60% opacity */
+    z-index: 1; /* Ensure the overlay is behind the content */
 }
 
 .hero-content {
     text-align: center;
     color: #fff;
-    z-index: 2; / Ensure the content is on top of the overlay /
+    z-index: 2; /* Ensure the content is on top of the overlay */
 }
 
 .hero-title {
@@ -225,7 +208,7 @@ img {
     }
 }
 
-/ Panel area starts here /
+/* Panel area starts here */
 .sect {
     display: flex;
     width: 100vw;
@@ -288,7 +271,7 @@ h2.text-center {
 h2.text-center span {
     color: #c1d72d;
 }
-/ form area /
+/* form area */
 
 .form-main {
     background: linear-gradient(to bottom, #00000024, #00000024),
@@ -302,7 +285,7 @@ h2.text-center span {
     .main-wrapper {
         border-radius: 10px;
         padding: 45px;
-        / width: 40%; /
+        /* width: 40%; */
         margin: 20px;
         box-shadow: 0 0 5px 5px #00000020;
         backdrop-filter: blur(5px);
@@ -509,7 +492,7 @@ holdsec */
     margin-bottom: 10px;
 }
 .brand-name {
-    color: #ffac30; / Highlight color /
+    color: #ffac30; /* Highlight color */
     font-weight: bold;
 }
 .section-heading p {
@@ -556,7 +539,7 @@ holdsec */
 }
 .image-text-secondary {
     position: absolute;
-    bottom: -40px; / Adjust this value based on your design /
+    bottom: -40px; /* Adjust this value based on your design */
     left: 20px;
     color: #fff;
     font-size: 16px;
@@ -568,15 +551,15 @@ holdsec */
 }
 .image-container:hover .image-text {
     opacity: 0.7;
-    bottom: 40px; / Adjust this value based on your design /
+    bottom: 40px; /* Adjust this value based on your design */
     font-size: 30px;
 }
 .image-container:hover .image-text-secondary {
     opacity: 1;
-    bottom: 0; / Adjust this value based on your design /
+    bottom: 0; /* Adjust this value based on your design */
 }
 
-/! CSS Used from: https://www.tashyatritech.com/frontend/assets/css/bootstrap.min.css /
+/*! CSS Used from: https://www.tashyatritech.com/frontend/assets/css/bootstrap.min.css */
 *,
 ::after,
 ::before {
@@ -676,7 +659,7 @@ p {
 .text-center {
     text-align: center !important;
 }
-/! CSS Used from: https://www.tashyatritech.com/frontend/assets/fonts/flaticon.css /
+/*! CSS Used from: https://www.tashyatritech.com/frontend/assets/fonts/flaticon.css */
 [class^="flaticon-"]:before,
 [class^="flaticon-"]:after {
     font-family: Flaticon;
@@ -691,7 +674,7 @@ p {
 .flaticon-chip:before {
     content: "\f10a";
 }
-/! CSS Used from: https://www.tashyatritech.com/frontend/assets/css/style.css /
+/*! CSS Used from: https://www.tashyatritech.com/frontend/assets/css/style.css */
 p {
     color: #444;
     font-weight: 400;
@@ -858,7 +841,7 @@ h3 {
 
 .form-section {
     display: flex;
-    align-items: stretch; / Change to stretch /
+    align-items: stretch; /* Change to stretch */
     justify-content: center;
     height: 700px;
 }
@@ -868,7 +851,7 @@ h3 {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    height: 100%; / Add this line /
+    height: 100%; /* Add this line */
 }
 .form-section h2 {
     font-size: 24px;
@@ -916,7 +899,7 @@ h3 {
 
 .cntct-sect {
     background-image: url("../images/call.jpg");
-    / background-image: url('("frontend/images/contact.jpg")'); /
+    /* background-image: url('("frontend/images/contact.jpg")'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -924,8 +907,6 @@ h3 {
     height: 100vh;
 }
 
-=======
->>>>>>> ab58fe8b4ccf0930ce0f4e2182076e35afe3ab1f
 /* .name-sec .carousel {
   height: 500px;
 }
