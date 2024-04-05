@@ -119,7 +119,7 @@ img{
 }
 
 .quotes-ig{
-    background-image: url('{{ asset("frontend/images/toilets.jpeg") }}');
+    background-image: url('/frontend/images/toilets.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
