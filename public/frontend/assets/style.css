@@ -50,7 +50,7 @@ img {
     font-family: "Bebas Neue", sans-serif;
 }
 .header-sec {
-    padding: 12px 0px 2px 0px;
+    /* padding: 12px 0px 2px 0px; */
     background: #fff;
 }
 
@@ -923,7 +923,14 @@ h3 {
     height: 500px !important;
     overflow: hidden !important;
 }
-
+.top-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #aeafb3;
+    font-size: 20px;
+    margin: auto;
+}
 
 @media only screen and (max-width: 767px){
   .thrd-sect {

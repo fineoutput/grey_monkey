@@ -14,8 +14,11 @@
 </head>
 <body>
     <div class="section header-sec sticky-top" id="main-header">
-        <div class="container">
+    <div class="top-head">
         <p class="text-center">Contact us: <a class="hhhedd" style= "text-decoration: none;" href="tel:0800 292 2313 ">0800 292 2313 </a></p>
+        </div>
+        <div class="container">
+            
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
