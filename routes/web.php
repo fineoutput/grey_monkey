@@ -34,6 +34,8 @@ use App\Http\Controllers\Admin\OrderController;
 Route::group(['prefix' => '/'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('/');
     Route::get('/quotes', [HomeController::class, 'quotes'])->name('quotes');
+    //-------- quote -----------
+Route::post('/add_quote', [HomeController::class, 'store_quote'])->name('store_quote');
 });
 
 //======================================= ADMIN ===================================================
@@ -60,30 +62,7 @@ Route::post('/add_team_process', [TeamController::class, 'add_team_process'])->n
 Route::get('/UpdateTeamStatus/{status}/{id}', [TeamController::class, 'UpdateTeamStatus'])->name('UpdateTeamStatus');
 Route::get('/deleteTeam/{id}', [TeamController::class, 'deleteTeam'])->name('deleteTeam');
 Route::resource('/sliders', SliderController::class);
-//-------- NEW -----------
-Route::resource('/sliders', SliderController::class);
-Route::resource('/users', UserController::class);
-Route::resource('/category', CategoryController::class);
-Route::get('/contact_enquiry', [ContactUsController::class, 'index'])->name('contact_enquiry');
-//------ products ----------
-Route::get('/products_category', [ProductController::class, 'products_category'])->name('products.category');
-Route::get('/products/{category_id}', [ProductController::class, 'index'])->name('products.index');
-Route::get('/products_create/{category_id}', [ProductController::class, 'create'])->name('products.create');
-Route::post('/products_store', [ProductController::class, 'store'])->name('products.store');
-Route::get('/products_show/{product_id}', [ProductController::class, 'show'])->name('products.show');
-Route::get('/products_edit/{product_id}', [ProductController::class, 'edit'])->name('products.edit');
-Route::delete('/products_destroy/{product_id}', [ProductController::class, 'destroy'])->name('products.destroy');
 
-//---------- Orders ---------
-Route::get('/new_orders', [OrderController::class, 'new_orders'])->name('new_orders');
-Route::get('/accepted_orders', [OrderController::class, 'accepted_orders'])->name('accepted_orders');
-Route::get('/dispatched_orders', [OrderController::class, 'dispatched_orders'])->name('dispatched_orders');
-Route::get('/delivered_orders', [OrderController::class, 'delivered_orders'])->name('delivered_orders');
-Route::get('/rejected_orders', [OrderController::class, 'rejected_orders'])->name('rejected_orders');
-Route::get('/all_orders', [OrderController::class, 'all_orders'])->name('all_orders');
-Route::get('/updateOrderStatus/{status}/{id}', [OrderController::class, 'updateOrderStatus'])->name('update-order-status');
-Route::get('/orderDetails/{id}', [OrderController::class, 'orderDetails'])->name('order-details');
-Route::get('/OrderInvoice/{id}', [OrderController::class, 'OrderInvoice'])->name('order-invoice');
 
     });
 

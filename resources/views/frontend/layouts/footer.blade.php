@@ -9,6 +9,21 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<footer class="footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright © 2024 Grey Monkey All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                  <div class="logo-sect">
+                  <a style="text-decoration: none;" href="https://www.fineoutput.com/">
+                    <p>Developed by Fineoutput Technology</p>
+                  </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
