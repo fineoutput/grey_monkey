@@ -258,7 +258,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container some_padd">
     <div id="carouselExampleIndicators" class="carousel slide slate" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

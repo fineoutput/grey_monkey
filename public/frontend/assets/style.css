@@ -995,7 +995,9 @@ h2 {
               color: black;
           }
   }
-  
+  .some_padd{
+    padding-top: 20px;
+  }
   @media screen and (max-width: 800px) {
       .next {
           display: none !important;
@@ -1020,8 +1022,16 @@ h2 {
 }
 
 }
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 600px){
    .slate {
-    height: 10vh !important;
+    height: 80vh !important;
 } 
+
 }
+@media only screen and (max-width: 450px){
+    .slate {
+     height: 20vh !important;
+ } .carousel-indicators{
+    display: none;
+}
+ }
