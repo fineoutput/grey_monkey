@@ -37,7 +37,7 @@
                                 <a class="nav-link text-black fw-bold" href="{{route('/')}}#special">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black fw-bold" href="{{route('/')}}#construct">Constructions</a>
+                                <a class="nav-link text-black fw-bold" href="{{route('/')}}#construct">Construction</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-black fw-bold" href="{{route('quotes')}}">Quotes</a>
