@@ -43,7 +43,7 @@
                                 <a class="nav-link text-black fw-bold" href="{{route('quotes')}}">Quotes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black fw-bold" href="{{route('/')}}#cntct">Contact Id</a>
+                                <a class="nav-link text-black fw-bold" href="{{route('/')}}#cntct">Contact Us</a>
                             </li>
                             
                         </ul>

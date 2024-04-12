@@ -119,7 +119,7 @@
         <div class="col-md-6 col-lg-3">
             <a href="{{route('quotes')}}">
                 <div class="image-container">
-                    <img src="{{url('frontend/images/Event.jpeg')}}">
+                    <img src="{{url('frontend/images/sents_thrd.jpg')}}">
                     <div class="image-overlay"></div>
                     <div class="image-text">Event Trailer Hire </div>
                     <div class="image-text-secondary"></div>
@@ -225,7 +225,7 @@
             <div class="col-lg-6">
                 <div class="thrd-txt">
                     <h2>Portable Toilet Hire that Won’t Let You Down</h2>
-                    <p>Our portable toilets are top quality, sleek & modern – and our professional, reliable service is unparalleled in the industry. That’s why site managers and event organisers call Grey Monkey LTD when they need portable toilets for worksites, parties, events.</p> <br>
+                    <p>Our portable toilets are top quality, sleek & modern – and our professional, reliable service is unparalleled in the industry. That’s why site managers and event organisers call Grey Monkey Ltd when they need portable toilets for worksites, parties, events.</p> <br>
 
                     <p>Whether you need one portable toilet for a construction or building site, or 50+ portable toilets for an event or party, we can offer you a clean, modern toilet in less than no time with our fast delivery service. With competitive Portable Loo hire prices, we’re able to accommodate all size sites and hire periods
                     </p>
@@ -258,47 +258,58 @@
     </div>
 </div>
 
-
-
-
-
-<!-- <div class="section form-sect section-padding" id="cntct">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="mb-4">Call us today on 0800 292 2313 or leave your message for a FREE quote!</h3>
-  <form action="submit.php" method="post">
-    <div class="mb-3">
-      <label for="full_name" class="form-label">Full Name</label>
-      <input type="text" class="form-control" id="full_name" name="full_name" required>
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="mb-3">
-      <label for="phone" class="form-label">Phone</label>
-      <input type="tel" class="form-control" id="phone" name="phone" required>
-    </div>
-    <div class="mb-3">
-      <label for="postcode" class="form-label">Postcode</label>
-      <input type="text" class="form-control" id="postcode" name="postcode" required>
-    </div>
-    <div class="mb-3">
-      <label for="hire_period" class="form-label">Hire Period</label>
-      <input type="text" class="form-control" id="hire_period" name="hire_period">
-    </div>
-    <div class="mb-3">
-      <label for="how_can_we_assist" class="form-label">How Can We Assist?</label>
-      <textarea class="form-control" id="how_can_we_assist" name="how_can_we_assist" rows="3" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-                      
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide slate" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="{{url('frontend/images/sents_frst.jpg')}}" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="col-6">
+                        <img src="{{url('frontend/images/sents_scnd.jpg')}}" class="d-block w-100" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="{{url('frontend/images/sents_ffth.jpg')}}" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="col-6">
+                        <!-- Add your fourth image here -->
+                        <img src="{{url('frontend/images/sents_frth.jpg')}}" class="d-block w-100" alt="Image 4">
+                    </div>
                 </div>
             </div>
         </div>
-    </div> -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<script>
+    // JavaScript to fix the navigation buttons
+    var myCarousel = document.querySelector('#carouselExampleIndicators');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000, // Adjust as needed
+        wrap: true // Allow wrapping
+    });
+</script>
+
+
+
+
 
 <div class="container section-padding" id="cntct">
     <div class="row">
@@ -331,75 +342,7 @@
         </div>
     </div>
 </div>
-<!-- <div class="form-main " id="cntct">
-      <div class="main-wrapper">
-        <h2 class="form-head">Call us today on 0800 292 2313 or leave your message for a FREE quote!</h2>
-        <form class="form-wrapper">
-          <div class="form-card">
-            <input
-              class="form-input"
-              type="text"
-              name="full_name"
-              required="required"
-            />
-            <label class="form-label" for="full_name">Full Name</label>
-          </div>
 
-          <div class="form-card">
-            <input
-              class="form-input"
-              type="email"
-              name="email"
-              required="required"
-            />
-            <label class="form-label" for="email">Email</label>
-          </div>
-
-          <div class="form-card">
-            <input
-              class="form-input"
-              type="number"
-              name="phone_number"
-              required="required"
-            />
-            <label class="form-label" for="phone_number">Phone number</label>
-          </div>
-          <div class="form-card">
-            <input
-              class="form-input"
-              type="number"
-              name="post_code"
-              required="required"
-            />
-            <label class="form-label" for="post_code">POSTCODE </label>
-          </div>
-          <div class="form-card">
-            <input
-              class="form-input"
-              type="number"
-              name="hire_period"
-              required="required"
-            />
-            <label class="form-label" for="hire_period">HIRE PERIOD</label>
-          </div>
-          <div class="form-card">
-            <textarea
-              class="form-textarea"
-              maxlength="420"
-              rows="3"
-              name="phone_number"
-              required="required"
-            ></textarea>
-            <label class="form-textarea-label" for="phone_number"
-              >HOW CAN WE ASSIST?</label
-            >
-          </div>
-          <div class="btn-wrap">
-            <button> Submit </button>
-          </div>
-        </form>
-      </div>
-    </div> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
@@ -417,23 +360,12 @@
             panel.classList.remove('active')
         })
     }
-    // $(document).ready(function() {
-    //     // Get the session message value
-
-
-    //     // Check if the session message exists
-    //     if (sessionMessage) {
-    //         // Display the session message
-    //         alert(sessionMessage);
-    //     }
-    // });
+   
 </script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var successModal = document.getElementById('successModal');
         var successMessage = document.getElementById('successMessage');
-
-        // Check if there's a success message in the session
         var sessionMessage = $('#sessionMessage').val();
 
         if (sessionMessage) {
