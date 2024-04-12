@@ -1032,6 +1032,6 @@ h2 {
     .slate {
      height: 20vh !important;
  } .carousel-indicators{
-    display: none;
+    display: none !important;
 }
  }
