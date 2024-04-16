@@ -61,7 +61,7 @@ class HomeController extends Controller
                     <p><b>Message:</b> ' . $request->message . ' </p>
                     <p>Please initiate the verification process and ensure to provide them with the necessary training and onboarding support. </p>';
                         $response = Mail::send([], [], function ($message) use ($html) {
-                            $message->to(env('CONSTANT_EMAIL'))
+                            $message->to(config('constants.CONSTANT_EMAIL'))
                                 ->subject('Contact_Us Query')
                                 ->setBody($html, 'text/html');
                         });
