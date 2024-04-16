@@ -843,7 +843,7 @@ h3 {
     display: flex;
     align-items: stretch; /* Change to stretch */
     justify-content: center;
-    height: 700px;
+    height: 100%;
 }
 .form-section .form-container {
     flex: 1;

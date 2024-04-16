@@ -38,8 +38,16 @@ class HomeController extends Controller
             'hireperiod' => 'required',
         ]);
     if(!$validator->fails()){
-        
 
+        $subject = "Quotes";
+        
+      if(empty($request->toilet)){
+
+        $subject = "Contact Us";
+      }
+      
+       
+    
         $quote = new quote();
         $quote->name = $request->name;
         $quote->email = $request->email;
@@ -51,7 +59,8 @@ class HomeController extends Controller
         $quote->ip = $request->ip();
         $quote->is_active = 1;
         $quote->save();
-        $html  = '<p>Dear Team,</p><p>We have a new quote on greymonkey.com. Below are the provided details:</p>
+        
+        $html  = '<p>Dear Team,</p><p>We have a new '.$subject. 'on greymonkey.com. Below are the provided details:</p>
                     <p><b>Name:</b> ' . $request->name . ' </p>
                     <p><b>Email:</b> ' . $request->email . ' </p>
                     <p><b>phone:</b> ' . $request->phone . ' </p>
@@ -60,9 +69,9 @@ class HomeController extends Controller
                     <p><b>toilets_qty:</b> ' . $request->toilet . ' </p>
                     <p><b>Message:</b> ' . $request->message . ' </p>
                     <p>Please initiate the verification process and ensure to provide them with the necessary training and onboarding support. </p>';
-                        $response = Mail::send([], [], function ($message) use ($html) {
+                        $response = Mail::send([], [], function ($message) use ($html, $subject) {
                             $message->to(config('constants.CONSTANT_EMAIL'))
-                                ->subject('Contact_Us Query')
+                                ->subject($subject.'Query')
                                 ->setBody($html, 'text/html');
                         });
         session()->flash('success', 'form submit success');
