@@ -5,7 +5,7 @@ return [
         'SITE_NAME' => 'Basic Admin',
     ],
     'CONSTANT_EMAIL' => 'office.fineoutput@gmail.com',
-    'RECAPTCHA_SITE_KEY' => 'YOUR_RECAPTCHA_SITE_KEY_HERE',
+    'RECAPTCHA_SITE_KEY' => '6LfZCr0pAAAAAFyp76NnYP-fvrn9BAhgKjOyNWzf',
 ];
 
 ?>
