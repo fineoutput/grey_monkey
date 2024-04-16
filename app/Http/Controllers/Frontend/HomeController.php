@@ -13,6 +13,7 @@ use App\Models\quote;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
+
 class HomeController extends Controller
 {
     // ============================= START INDEX ============================ 
@@ -50,7 +51,7 @@ class HomeController extends Controller
         $quote->ip = $request->ip();
         $quote->is_active = 1;
         $quote->save();
-        $html  = '<p>Dear Team,</p><p>We have a new registration from a potential buyer on Profitaara.com. Below are the provided details:</p>
+        $html  = '<p>Dear Team,</p><p>We have a new quote on greymonkey.com. Below are the provided details:</p>
                     <p><b>Name:</b> ' . $request->name . ' </p>
                     <p><b>Email:</b> ' . $request->email . ' </p>
                     <p><b>phone:</b> ' . $request->phone . ' </p>
@@ -58,10 +59,9 @@ class HomeController extends Controller
                     <p><b>hire period:</b> ' . $request->hireperiod . ' </p>
                     <p><b>toilets_qty:</b> ' . $request->toilet . ' </p>
                     <p><b>Message:</b> ' . $request->message . ' </p>
-                    <a href="' . url('/admin_index') . '"><p>Link to admin portal</p></a>
                     <p>Please initiate the verification process and ensure to provide them with the necessary training and onboarding support. </p>';
                         $response = Mail::send([], [], function ($message) use ($html) {
-                            $message->to("office.fineoutput@gmail.com")
+                            $message->to(env('CONSTANT_EMAIL'))
                                 ->subject('Contact_Us Query')
                                 ->setBody($html, 'text/html');
                         });
