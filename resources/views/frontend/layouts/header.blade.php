@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Grey-Monkey</title>
+    <link rel="icon" href="{{asset('frontend/images/fav.png')}}" sizes="32x32">
 </head>
 <body>
     <div class="section header-sec sticky-top" id="main-header">
