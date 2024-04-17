@@ -73,6 +73,16 @@
                         <div id="messageError" style="color: red;"></div>
 
                         <div class="g-recaptcha" data-sitekey="{{ config('constants.RECAPTCHA_SITE_KEY') }}" style="margin-bottom: 20px;"></div>
+                        @if ($errors->has('recaptcha'))
+                        <div class="alert alert-danger">
+                            {{ $errors->first('recaptcha') }}
+                        </div>
+                        @endif
+                        @if ($errors->has('g-recaptcha-response'))
+                        <div class="alert alert-danger">
+                            {{ $errors->first('g-recaptcha-response') }}
+                        </div>
+                        @endif
 
                         <button type="submit">Submit</button>
                     </form>

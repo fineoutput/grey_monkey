@@ -36,14 +36,24 @@ class HomeController extends Controller
             'phone' => 'required',
             'postcode' => 'required',
             'hireperiod' => 'required',
+            'g-recaptcha-response' => 'required',
         ]);
     if(!$validator->fails()){
+        
+        $response = $request->input('g-recaptcha-response');
+        $captcha_success = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . config('constants.RECAPTCHA_SECRET_KEY') . "&response=" . $response));
+        if ($captcha_success->success == false) {
+            return redirect()->back()
+            ->withErrors(['recaptcha' => 'Failed to verify reCAPTCHA. Please try again.'])
+            ->withInput();
 
-        $subject = "Quotes";
+        }else{
+
+        $subject = "Quotes Query";
         
       if(empty($request->toilet)){
 
-        $subject = "Contact Us";
+        $subject = "Contact Us Query";
       }
       
        
@@ -60,15 +70,14 @@ class HomeController extends Controller
         $quote->is_active = 1;
         $quote->save();
         
-        $html  = '<p>Dear Team,</p><p>We have a new '.$subject. 'on greymonkey.com. Below are the provided details:</p>
+        $html  = '<p>Dear Team,</p><p>You have a new '.$subject. ' on https://greymonkeytoilets.co.uk/ Below are the provided details:</p>
                     <p><b>Name:</b> ' . $request->name . ' </p>
                     <p><b>Email:</b> ' . $request->email . ' </p>
                     <p><b>phone:</b> ' . $request->phone . ' </p>
                     <p><b>postcode:</b> ' . $request->postcode . ' </p>
                     <p><b>hire period:</b> ' . $request->hireperiod . ' </p>
                     <p><b>toilets_qty:</b> ' . $request->toilet . ' </p>
-                    <p><b>Message:</b> ' . $request->message . ' </p>
-                    <p>Please initiate the verification process and ensure to provide them with the necessary training and onboarding support. </p>';
+                    <p><b>Message:</b> ' . $request->message . ' </p>';
                         $response = Mail::send([], [], function ($message) use ($html, $subject) {
                             $message->to(config('constants.CONSTANT_EMAIL'))
                                 ->subject($subject.'Query')
@@ -77,8 +86,10 @@ class HomeController extends Controller
         session()->flash('success', 'form submit success');
         return redirect()->back();
    // return response()->json(['message' => 'success']);
+}
      }
     else {
+       
         
         return redirect()->back()
                 ->withErrors($validator)
