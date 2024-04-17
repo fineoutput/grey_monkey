@@ -14,13 +14,13 @@
 <footer class="footer section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 foot-sect">
                     <p>Copyright © 2024 Grey Monkey All Rights Reserved.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 foot-dept">
                   <div class="logo-sect">
                   <a style="text-decoration: none;" href="https://www.fineoutput.com/">
-                    <p>Developed by Fineoutput Technology</p>
+                    <p>Developed by Fineoutput Technologies</p>
                   </a>
                   </div>
                 </div>

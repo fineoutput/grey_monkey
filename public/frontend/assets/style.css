@@ -558,7 +558,13 @@ holdsec */
     opacity: 1;
     bottom: 0; /* Adjust this value based on your design */
 }
-
+.foot-sect p {
+    text-align: left;
+}
+.foot-dept {
+    display: flex;
+    justify-content: end;
+}
 /*! CSS Used from: https://www.tashyatritech.com/frontend/assets/css/bootstrap.min.css */
 *,
 ::after,
