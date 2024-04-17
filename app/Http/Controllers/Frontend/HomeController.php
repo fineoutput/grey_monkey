@@ -49,11 +49,11 @@ class HomeController extends Controller
 
         }else{
 
-        $subject = "Quotes";
+        $subject = "Quotes Query";
         
       if(empty($request->toilet)){
 
-        $subject = "Contact Us";
+        $subject = "Contact Us Query";
       }
       
        
@@ -70,15 +70,14 @@ class HomeController extends Controller
         $quote->is_active = 1;
         $quote->save();
         
-        $html  = '<p>Dear Team,</p><p>We have a new '.$subject. 'on greymonkey.com. Below are the provided details:</p>
+        $html  = '<p>Dear Team,</p><p>You have a new '.$subject. ' on https://greymonkeytoilets.co.uk/ Below are the provided details:</p>
                     <p><b>Name:</b> ' . $request->name . ' </p>
                     <p><b>Email:</b> ' . $request->email . ' </p>
                     <p><b>phone:</b> ' . $request->phone . ' </p>
                     <p><b>postcode:</b> ' . $request->postcode . ' </p>
                     <p><b>hire period:</b> ' . $request->hireperiod . ' </p>
                     <p><b>toilets_qty:</b> ' . $request->toilet . ' </p>
-                    <p><b>Message:</b> ' . $request->message . ' </p>
-                    <p>Please initiate the verification process and ensure to provide them with the necessary training and onboarding support. </p>';
+                    <p><b>Message:</b> ' . $request->message . ' </p>';
                         $response = Mail::send([], [], function ($message) use ($html, $subject) {
                             $message->to(config('constants.CONSTANT_EMAIL'))
                                 ->subject($subject.'Query')
