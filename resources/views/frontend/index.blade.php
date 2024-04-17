@@ -48,7 +48,7 @@
             <p class="hero-subtitle">Portable Toilets</p>
         </div>
     </header> -->
-    <style>
+<style>
     /* CSS for success modal */
     #successModal {
         display: none;
@@ -59,24 +59,31 @@
         width: 400px;
         height: 100px;
         text-align: center;
-        z-index: 1000; /* Ensure it's above other elements */
-        overflow: hidden; /* Prevent scrolling */
+        z-index: 1000;
+        /* Ensure it's above other elements */
+        overflow: hidden;
+        /* Prevent scrolling */
     }
 
     .modal-content {
-        background-color: #19a454db; /* Change background color to green */
+        background-color: #19a454db;
+        /* Change background color to green */
         padding: 10px;
-        color: white; /* Text color */
+        color: white;
+        /* Text color */
         border-radius: 10px;
     }
-    .modal-content p{
+
+    .modal-content p {
         font-size: 25px;
         margin-bottom: 0px;
-        color: white; /* Text color */
+        color: white;
+        /* Text color */
     }
 
     .close {
-        color: white; /* Close button color */
+        color: white;
+        /* Close button color */
         position: absolute;
         top: 5px;
         right: 5px;
@@ -336,6 +343,16 @@
                         <div id="messageError" style="color: red;"></div>
 
                         <div class="g-recaptcha" data-sitekey="{{ config('constants.RECAPTCHA_SITE_KEY') }}" style="margin-bottom: 20px;"></div>
+                        @if ($errors->has('recaptcha'))
+                        <div class="alert alert-danger">
+                            {{ $errors->first('recaptcha') }}
+                        </div>
+                        @endif
+                        @if ($errors->has('g-recaptcha-response'))
+                        <div class="alert alert-danger">
+                            {{ $errors->first('g-recaptcha-response') }}
+                        </div>
+                        @endif
 
                         <button type="submit">Submit</button>
                     </form>
@@ -421,6 +438,8 @@
         var postcode = document.forms['quoteForm']['postcode'].value.trim();
         var hireperiod = document.forms['quoteForm']['hireperiod'].value.trim();
         var message = document.forms['quoteForm']['message'].value.trim();
+
+        
 
         // Check if any required fields are empty
         if (name === '') {

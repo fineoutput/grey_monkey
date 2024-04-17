@@ -36,8 +36,18 @@ class HomeController extends Controller
             'phone' => 'required',
             'postcode' => 'required',
             'hireperiod' => 'required',
+            'g-recaptcha-response' => 'required',
         ]);
     if(!$validator->fails()){
+        
+        $response = $request->input('g-recaptcha-response');
+        $captcha_success = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . config('constants.RECAPTCHA_SECRET_KEY') . "&response=" . $response));
+        if ($captcha_success->success == false) {
+            return redirect()->back()
+            ->withErrors(['recaptcha' => 'Failed to verify reCAPTCHA. Please try again.'])
+            ->withInput();
+
+        }else{
 
         $subject = "Quotes";
         
@@ -77,8 +87,10 @@ class HomeController extends Controller
         session()->flash('success', 'form submit success');
         return redirect()->back();
    // return response()->json(['message' => 'success']);
+}
      }
     else {
+       
         
         return redirect()->back()
                 ->withErrors($validator)
