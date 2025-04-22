@@ -1031,8 +1031,11 @@ h2 {
 @media only screen and (max-width: 600px){
    .slate {
     height: 80vh !important;
-} 
 
+} 
+.songni{
+    gap: 20px;
+}
 }
 @media only screen and (max-width: 450px){
     .slate {
