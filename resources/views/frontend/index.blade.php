@@ -10,7 +10,7 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{url('frontend/images/toilet_row3.jpeg')}}"> class="d-block w-100" alt="...">
+            <img src="{{url('frontend/images/Media (13).jpg')}}"> class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img src="{{url('frontend/images/toilet_row.jpeg')}}" class="d-block w-100" alt="...">
@@ -306,7 +306,7 @@
         <div class="col-md-6 col-lg-3">
             <a href="{{route('quotes')}}">
                 <div class="image-container">
-                    <img src="{{url('frontend/images/Media (13).jpg')}}">
+                    <img src="{{url('frontend/images/toilet_row3.jpeg')}}">
                     <div class="image-overlay"></div>
                     <div class="image-text">Event Trailer Hire </div>
                     <div class="image-text-secondary"></div>
@@ -342,16 +342,16 @@
             <div class="col-lg-6 set-sec">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item aaa active">
                             <img src="{{url('frontend/images/toilet_row.jpeg')}}" class="d-block w-100" alt="Slide 1">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item aaa">
                             <img src="{{url('frontend/images/toilet_row2.jpeg')}}" class="d-block w-100" alt="Slide 2">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item aaa">
                             <img src="{{url('frontend/images/toilet_row3.jpeg')}}" class="d-block w-100" alt="Slide 3">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item aaa">
                             <img src="{{url('frontend/images/Media (7).jpg')}}" class="d-block w-100" alt="Slide 4">
                         </div>
                     </div>
