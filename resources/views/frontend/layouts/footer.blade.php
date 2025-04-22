@@ -14,10 +14,15 @@
 <footer class="footer section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 foot-sect">
+              
+                <div class="col-md-4 foot-sect">
                     <p>Copyright © 2024 Grey Monkey All Rights Reserved.</p>
                 </div>
-                <div class="col-md-6 foot-dept">
+                <div class="col-md-4 foot-sect">
+                  <p style="text-align: center"> Grey Monkey LTD, Unit 6, Saxilby Enterprise Park Skellingthorpe Road, Saxilby, Lincoln, England, LN1 2LR
+                  </p>
+              </div>
+                <div class="col-md-4 foot-dept">
                   <div class="logo-sect">
                   <a style="text-decoration: none;" href="https://www.fineoutput.com/">
                     <p>Developed by Fineoutput Technologies</p>

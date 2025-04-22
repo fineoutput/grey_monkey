@@ -5,6 +5,8 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -15,6 +17,15 @@
         </div>
         <div class="carousel-item">
             <img src="{{url('frontend/images/toilet_row2.jpeg')}}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{{url('frontend/images/Media (16).jpg')}}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{{url('frontend/images/Media (1).jpg')}}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{{url('frontend/images/Media (2).jpg')}}" class="d-block w-100" alt="...">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -147,6 +158,49 @@
             </a>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-3">
+            <a href="{{route('quotes')}}">
+                <div class="image-container">
+                    <img src="{{url('frontend/images/Media (3).jpg')}}">
+                    <div class="image-overlay"></div>
+                    <div class="image-text">Hire & Service</div>
+                    <div class="image-text-secondary"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="{{route('quotes')}}">
+                <div class="image-container">
+                    <img src="{{url('frontend/images/Media (4).jpg')}}">
+                    <div class="image-overlay"></div>
+                    <div class="image-text">Events </div>
+                    <div class="image-text-secondary"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="{{route('quotes')}}">
+                <div class="image-container">
+                    <img src="{{url('frontend/images/Media (5).jpg')}}">
+                    <div class="image-overlay"></div>
+                    <div class="image-text">Event Trailer Hire </div>
+                    <div class="image-text-secondary"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="{{route('quotes')}}">
+                <div class="image-container">
+                    <img src="{{url('frontend/images/Media (6).jpg')}}">
+                    <img src="images/img4.jpg" alt="Image 4">
+                    <div class="image-overlay"></div>
+                    <div class="image-text">Cross Hire </div>
+                    <div class="image-text-secondary"></div>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
 
 <!-- <div class="section special-sec section-padding" id="special">
@@ -227,6 +281,51 @@
     </div>
 </section>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-3">
+            <a href="{{route('quotes')}}">
+                <div class="image-container">
+                    <img src="{{url('frontend/images/Media (15).jpg')}}">
+                    <div class="image-overlay"></div>
+                    <div class="image-text">Hire & Service</div>
+                    <div class="image-text-secondary"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="{{route('quotes')}}">
+                <div class="image-container">
+                    <img src="{{url('frontend/images/Media (14).jpg')}}">
+                    <div class="image-overlay"></div>
+                    <div class="image-text">Events </div>
+                    <div class="image-text-secondary"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="{{route('quotes')}}">
+                <div class="image-container">
+                    <img src="{{url('frontend/images/Media (13).jpg')}}">
+                    <div class="image-overlay"></div>
+                    <div class="image-text">Event Trailer Hire </div>
+                    <div class="image-text-secondary"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="{{route('quotes')}}">
+                <div class="image-container">
+                    <img src="{{url('frontend/images/Media (12).jpg')}}">
+                    <img src="images/img4.jpg" alt="Image 4">
+                    <div class="image-overlay"></div>
+                    <div class="image-text">Cross Hire </div>
+                    <div class="image-text-secondary"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 
 <div class="section thrd-sect section-padding" id="construct">
     <div class="container">
@@ -251,6 +350,9 @@
                         </div>
                         <div class="carousel-item">
                             <img src="{{url('frontend/images/toilet_row3.jpeg')}}" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url('frontend/images/Media (7).jpg')}}" class="d-block w-100" alt="Slide 4">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -287,11 +389,22 @@
             <div class="carousel-item">
                 <div class="row">
                     <div class="col-6">
-                        <img src="{{url('frontend/images/sents_ffth.jpg')}}" class="d-block w-100" alt="Image 3">
+                        <img src="{{url('frontend/images/Media (8).jpg')}}" class="d-block w-100" alt="Image 3">
                     </div>
                     <div class="col-6">
                         <!-- Add your fourth image here -->
-                        <img src="{{url('frontend/images/sents_frth.jpg')}}" class="d-block w-100" alt="Image 4">
+                        <img src="{{url('frontend/images/Media (9).jpg')}}" class="d-block w-100" alt="Image 4">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="{{url('frontend/images/Media (10).jpg')}}" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="col-6">
+                        <!-- Add your fourth image here -->
+                        <img src="{{url('frontend/images/Media (11).jpg')}}" class="d-block w-100" alt="Image 4">
                     </div>
                 </div>
             </div>
