@@ -478,7 +478,7 @@
         <div class="col-md-6 ">
             <div class="form-section">
                 <div class="image-container">
-                    <img src="{{url('frontend/images/poster.jpg')}}">
+                    <img src="{{url('frontend/images/sdsdd.png')}}">
                 </div>
             </div>
         </div>
