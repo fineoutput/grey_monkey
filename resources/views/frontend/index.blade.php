@@ -400,7 +400,7 @@
             <div class="carousel-item">
                 <div class="row">
                     <div class="col-6">
-                        <img src="{{url('frontend/images/Media (10).jpg')}}" class="d-block w-100" alt="Image 3">
+                        <img src="{{url('frontend/images/Media (15).jpg')}}" class="d-block w-100" alt="Image 3">
                     </div>
                     <div class="col-6">
                         <!-- Add your fourth image here -->
