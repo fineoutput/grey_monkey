@@ -904,7 +904,7 @@ h3 {
 }
 
 .cntct-sect {
-    background-image: url("../images/assa.png");
+    background-image: url("../images/download (2).jpg");
     /* background-image: url('("frontend/images/contact.jpg")'); */
     background-size: cover;
     background-position: center;
@@ -1052,6 +1052,13 @@ h2 {
  } .carousel-indicators{
     display: none !important;
 }
+.sillk{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.whart{
+    padding: 5px !important;
+}
  }
 .aaa img{
     height: 500px !important;
@@ -1078,5 +1085,6 @@ h2 {
     .d-lg-block {
       display: none !important;
     }
+
 
 }

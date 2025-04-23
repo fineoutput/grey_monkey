@@ -20,10 +20,10 @@
     <div class="top-head">
         <p class="text-center">Contact us: <a class="hhhedd" style= "text-decoration: none;" href="tel:0800 292 2313 ">0800 292 2313 </a></p>
         </div>
-        <div class="container">
+        <div class="container sillk">
             
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
+                <div class="container-fluid whart">
                     <a class="navbar-brand" href="{{route('/')}}">
                         <img src="{{url('frontend/images/logo-2.png')}}" width="110px" alt="Logo">
                     </a>
