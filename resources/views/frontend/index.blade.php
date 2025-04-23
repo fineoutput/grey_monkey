@@ -158,7 +158,8 @@
             </a>
         </div>
     </div>
-    <div class="row">
+    <div class="d-none d-lg-block">
+       <div class="row ">
         <div class="col-md-6 col-lg-3">
             <a href="{{route('quotes')}}">
                 <div class="image-container">
@@ -199,6 +200,55 @@
                     <div class="image-text-secondary"></div>
                 </div>
             </a>
+        </div>
+    </div> 
+    </div>
+    
+
+    <div id="splideSlider" class="splide d-lg-none d-block">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <a href="{{ route('quotes') }}">
+                        <div class="image-container">
+                            <img src="{{ url('frontend/images/Media (3).jpg') }}">
+                            <div class="image-overlay"></div>
+                            <div class="image-text">Hire & Service</div>
+                            <div class="image-text-secondary"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="{{ route('quotes') }}">
+                        <div class="image-container">
+                            <img src="{{ url('frontend/images/Media (4).jpg') }}">
+                            <div class="image-overlay"></div>
+                            <div class="image-text">Events</div>
+                            <div class="image-text-secondary"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="{{ route('quotes') }}">
+                        <div class="image-container">
+                            <img src="{{ url('frontend/images/Media (5).jpg') }}">
+                            <div class="image-overlay"></div>
+                            <div class="image-text">Event Trailer Hire</div>
+                            <div class="image-text-secondary"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="{{ route('quotes') }}">
+                        <div class="image-container">
+                            <img src="{{ url('frontend/images/Media (6).jpg') }}">
+                            <div class="image-overlay"></div>
+                            <div class="image-text">Cross Hire</div>
+                            <div class="image-text-secondary"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -487,6 +537,24 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#splideSlider', {
+            type: 'loop',
+            perPage: 4,
+            perMove: 1,
+            gap: '1rem',
+            breakpoints: {
+                992: {
+                    perPage: 2,
+                },
+                576: {
+                    perPage: 1,
+                }
+            }
+        }).mount();
+    });
+</script>
 <script>
     const panels = document.querySelectorAll('.panel')
 
