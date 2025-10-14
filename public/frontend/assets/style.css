@@ -1085,6 +1085,8 @@ h2 {
     .d-lg-block {
       display: none !important;
     }
-
+.carousel-inner{
+    height: 100% !important;
+}
 
 }
