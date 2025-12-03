@@ -115,49 +115,7 @@
         <h2>What we specialise in</h2>
         <p><span class="brand-name">Grey Monkey</span> Specialises in low-cost Portable Loo hire across the midlands. Our portable toilet rental is second to none – With unbeatable Portable Loo hire prices and delivery costs, you won't need to look anywhere else once you have worked with us.</p>
     </div>
-    <div class="row">
-        <div class="col-md-6 col-lg-3">
-            <a href="{{route('quotes')}}">
-                <div class="image-container">
-                    <img src="{{url('frontend/images/construct.jpeg')}}">
-                    <div class="image-overlay"></div>
-                    <div class="image-text">Hire & Service</div>
-                    <div class="image-text-secondary"></div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <a href="{{route('quotes')}}">
-                <div class="image-container">
-                    <img src="{{url('frontend/images/toilet_row2.jpeg')}}">
-                    <div class="image-overlay"></div>
-                    <div class="image-text">Events </div>
-                    <div class="image-text-secondary"></div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <a href="{{route('quotes')}}">
-                <div class="image-container">
-                    <img src="{{url('frontend/images/sents_thrd.jpg')}}">
-                    <div class="image-overlay"></div>
-                    <div class="image-text">Event Trailer Hire </div>
-                    <div class="image-text-secondary"></div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <a href="{{route('quotes')}}">
-                <div class="image-container">
-                    <img src="{{url('frontend/images/toilet_row3.jpeg')}}">
-                    <img src="images/img4.jpg" alt="Image 4">
-                    <div class="image-overlay"></div>
-                    <div class="image-text">Cross Hire </div>
-                    <div class="image-text-secondary"></div>
-                </div>
-            </a>
-        </div>
-    </div>
+    
     <div class="d-none d-lg-block">
        <div class="row ">
         <div class="col-md-6 col-lg-3">
