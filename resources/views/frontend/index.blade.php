@@ -350,19 +350,18 @@
             <div class="col-lg-6 set-sec">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        
-                        <div class="carousel-item aaa">
-                            <img src="{{url('frontend/images/Media (6).jpg')}}" class="d-block w-100" alt="Slide 1">
-                        </div>
-                        <div class="carousel-item aaa">
-                            <img src="{{url('frontend/images/Media (5).jpg')}}" class="d-block w-100" alt="Slide 2">
-                        </div>
-                        <div class="carousel-item aaa">
-                            <img src="{{url('frontend/images/Media (7).jpg')}}" class="d-block w-100" alt="Slide 3">
-                        </div>
-                        {{-- <div class="carousel-item aaa active">
+                        <div class="carousel-item aaa active">
                             <img src="{{url('frontend/images/toilet_row.jpeg')}}" class="d-block w-100" alt="Slide 1">
-                        </div> --}}
+                        </div>
+                        <div class="carousel-item aaa">
+                            <img src="{{url('frontend/images/Media (6).jpg')}}" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item aaa">
+                            <img src="{{url('frontend/images/Media (5).jpg')}}" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item aaa">
+                            <img src="{{url('frontend/images/Media (7).jpg')}}" class="d-block w-100" alt="Slide 4">
+                        </div>
                     </div>
                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
