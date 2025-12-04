@@ -12,9 +12,9 @@
         <div class="carousel-item active">
             <img src="{{url('frontend/images/Media (13).jpg')}}"> class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
+        {{-- <div class="carousel-item">
             <img src="{{url('frontend/images/toilet_row.jpeg')}}" class="d-block w-100" alt="...">
-        </div>
+        </div> --}}
         {{-- <div class="carousel-item">
             <img src="{{url('frontend/images/toilet_row2.jpeg')}}" class="d-block w-100" alt="...">
         </div> --}}
@@ -350,9 +350,9 @@
             <div class="col-lg-6 set-sec">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item aaa active">
+                        {{-- <div class="carousel-item aaa active">
                             <img src="{{url('frontend/images/toilet_row.jpeg')}}" class="d-block w-100" alt="Slide 1">
-                        </div>
+                        </div> --}}
                         <div class="carousel-item aaa">
                             <img src="{{url('frontend/images/Media (6).jpg')}}" class="d-block w-100" alt="Slide 2">
                         </div>
