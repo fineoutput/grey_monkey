@@ -15,9 +15,9 @@
         <div class="carousel-item">
             <img src="{{url('frontend/images/toilet_row.jpeg')}}" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
+        {{-- <div class="carousel-item">
             <img src="{{url('frontend/images/toilet_row2.jpeg')}}" class="d-block w-100" alt="...">
-        </div>
+        </div> --}}
         <div class="carousel-item">
             <img src="{{url('frontend/images/Media (16).jpg')}}" class="d-block w-100" alt="...">
         </div>
@@ -314,7 +314,7 @@
         <div class="col-md-6 col-lg-3">
             <a href="{{route('quotes')}}">
                 <div class="image-container">
-                    <img src="{{url('frontend/images/toilet_row3.jpeg')}}">
+                    <img src="{{url('frontend/images/Media (7).jpg')}}">
                     <div class="image-overlay"></div>
                     <div class="image-text">Event Trailer Hire </div>
                     <div class="image-text-secondary"></div>
@@ -354,10 +354,10 @@
                             <img src="{{url('frontend/images/toilet_row.jpeg')}}" class="d-block w-100" alt="Slide 1">
                         </div>
                         <div class="carousel-item aaa">
-                            <img src="{{url('frontend/images/toilet_row2.jpeg')}}" class="d-block w-100" alt="Slide 2">
+                            <img src="{{url('frontend/images/Media (6).jpg')}}" class="d-block w-100" alt="Slide 2">
                         </div>
                         <div class="carousel-item aaa">
-                            <img src="{{url('frontend/images/toilet_row3.jpeg')}}" class="d-block w-100" alt="Slide 3">
+                            <img src="{{url('frontend/images/Media (5).jpg')}}" class="d-block w-100" alt="Slide 3">
                         </div>
                         <div class="carousel-item aaa">
                             <img src="{{url('frontend/images/Media (7).jpg')}}" class="d-block w-100" alt="Slide 4">
