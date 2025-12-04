@@ -351,7 +351,7 @@
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item aaa active">
-                            <img src="{{url('frontend/images/toilet_row.jpeg')}}" class="d-block w-100" alt="Slide 1">
+                            <img src="{{url('frontend/images/Media (7).jpg')}}" class="d-block w-100" alt="Slide 1">
                         </div>
                         <div class="carousel-item aaa">
                             <img src="{{url('frontend/images/Media (6).jpg')}}" class="d-block w-100" alt="Slide 2">
