@@ -352,13 +352,13 @@
                     <div class="carousel-inner">
                         
                         <div class="carousel-item aaa">
-                            <img src="{{url('frontend/images/Media (6).jpg')}}" class="d-block w-100" alt="Slide 2">
+                            <img src="{{url('frontend/images/Media (6).jpg')}}" class="d-block w-100" alt="Slide 1">
                         </div>
                         <div class="carousel-item aaa">
-                            <img src="{{url('frontend/images/Media (5).jpg')}}" class="d-block w-100" alt="Slide 3">
+                            <img src="{{url('frontend/images/Media (5).jpg')}}" class="d-block w-100" alt="Slide 2">
                         </div>
                         <div class="carousel-item aaa">
-                            <img src="{{url('frontend/images/Media (7).jpg')}}" class="d-block w-100" alt="Slide 4">
+                            <img src="{{url('frontend/images/Media (7).jpg')}}" class="d-block w-100" alt="Slide 3">
                         </div>
                         {{-- <div class="carousel-item aaa active">
                             <img src="{{url('frontend/images/toilet_row.jpeg')}}" class="d-block w-100" alt="Slide 1">
